@@ -1,0 +1,46 @@
+
+Owner@Owner-PC MINGW64 ~
+$ git clone https://github.com/mygam1/sptest.git
+Cloning into 'sptest'...
+warning: You appear to have cloned an empty repository.
+
+Owner@Owner-PC MINGW64 ~
+$ cd sptest
+
+Owner@Owner-PC MINGW64 ~/sptest (master)
+$ pwd
+/c/Users/Owner/sptest
+
+Owner@Owner-PC MINGW64 ~/sptest (master)
+$ echo "java oops" > java
+
+Owner@Owner-PC MINGW64 ~/sptest (master)
+$ cat java
+java oops
+
+Owner@Owner-PC MINGW64 ~/sptest (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Owner@Owner-PC MINGW64 ~/sptest (master)
+$ git add java
+warning: LF will be replaced by CRLF in java.
+The file will have its original line endings in your working directory.
+
+Owner@Owner-PC MINGW64 ~/sptest (master)
+$ git commit -m "java file"
+[master (root-commit) 5331df4] java file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 java
+
+Owner@Owner-PC MINGW64 ~/sptest (master)
+$ git push
